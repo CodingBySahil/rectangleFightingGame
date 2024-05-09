@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Fighting Game</title>
+  </head>
+  <body>
+    <!-- Red container div -->
+    <div style="position: relative; display: inline-block">
+      <!-- smaller red container div -->
+      <div
+        style="
+          position: absolute;
+          display: flex;
+          width: 100%;
+          align-items: center;
+          padding: 20px;
+        "
+      >
+        <!-- player health -->
+        <div
+          style="
+            position: relative;
+            width: 100%;
+            height: 30px;
+            display: flex;
+            justify-content: flex-end;
+          "
+        >
+          <div style="background-color: yellow; height: 30px; width: 100%">
+            <div
+              id="playerHealth"
+              style="
+                position: absolute;
+                background-color: blue;
+                top: 0;
+                bottom: 0;
+                right: 0;
+                width: 100%;
+              "
+            ></div>
+          </div>
+        </div>
+        <!-- timer -->
+        <div id="timer"
+          style="
+            background-color: red;
+            height: 100px;
+            width: 100px;
+            flex-shrink: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          "
+        > 10 </div>
+        <!-- enemy health -->
+        <div style="position: relative; width: 100%; height: 30px">
+          <div style="background-color: yellow; height: 30px">
+            <div
+              id="enemyHealth"
+              style="
+                background-color: blue;
+                top: 0;
+                bottom: 0;
+                right: 0;
+                left: 0;
+              "
+            ></div>
+          </div>
+        </div>
+      </div>
+      <div id="displayText"
+        style="
+          position: absolute;
+          color: greenyellow;
+          display: none;
+          justify-content: center;
+          align-items: center;
+          top: 0;
+          right: 0;
+          bottom: 0;
+          left: 0;
+        "
+      >
+      </div>
+      <canvas></canvas>
+    </div>
+
+    <!-- Costom javaScript -->
+    <script src="script.js"></script>
+  </body>
+</html>
